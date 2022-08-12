@@ -14,8 +14,8 @@ proxies = {
 
 
 def get_location(url):
-    response = requests.get(url=url, headers=headers, proxies=proxies)
-    soup = BeautifulSoup(response.text, 'lxml')
+    req = requests.get(url=url, headers=headers, proxies=proxies)
+    soup = BeautifulSoup(req.text, 'lxml')
 
     ip = soup.find('div', class_='ip').text.strip()
     location = soup.find('div', class_='value-country').text.strip()
