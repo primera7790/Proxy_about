@@ -6,10 +6,10 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36'
 }
 
-# Выбираем вариант сообщения прокси: либо через привязку к ip, либо через логин и пароль. На место "ip" прописываем действующий.
+# Выбираем вариант сообщения прокси: либо через привязку к ip, либо через логин и пароль. На место 'ip:port' прописываем действующие значения.
 proxies = {
-    # 'https': 'http://"ip"'
-    # 'https': f'http://{login}:{password}@"ip"'
+    'https': 'http://ip:port'
+    # 'https': f'http://{login}:{password}@ip:port'
 }
 
 
